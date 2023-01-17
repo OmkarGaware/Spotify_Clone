@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Spotify</title>
+  </head>
+  <body>
+    <!-- Nav Bar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top"> Spotify
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Nav Bar End -->
+
+    <!-- Main Body Start -->
+    <div class="container-fluid main-container p-3 shadow shadow-lg">
+        <div class="songList">
+            <h3>Best Of NSC - No Copyright Sounds</h3>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="" >
+                    <Span class="songName">Rang Lageya | Paras Chhabra </Span>
+                    <span class="songListPlay"><span class="timeStamp me-2 ms-2" >05.34 <i id="0" class="fa-regular  fa-circle-play songItem_play" ></i></span></span>
+                </div>
+                <div class="songItem">
+                  <img alt="" >
+                  <Span class="songName">Rang Lageya | Paras Chhabra </Span>
+                  <span class="songListPlay"><span class="timeStamp me-2 ms-2" >05.34 <i id="1" class="fa-regular  fa-circle-play songItem_play" ></i></span></span>
+              </div>
+              <div class="songItem">
+                <img alt="" >
+                <Span class="songName">Rang Lageya | Paras Chhabra </Span>
+                <span class="songListPlay"><span class="timeStamp me-2 ms-2" >05.34 <i id="2" class="fa-regular  fa-circle-play songItem_play" ></i></span></span>
+            </div>                
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <!-- main Body End -->
+
+    <!-- Bottom Div end-->
+    <div class="container-fluid bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100" >
+        <div class="icons mt-1">
+            <i class="fa-solid fa-2x fa-step-backward" id="previous"></i>
+            <i class="fa-regular fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" alt="2" width="42" id="gif"> <span id="masterSongName">Rang_Lageya</span> <span id="progressTime">- 0</span>
+        </div>
+    </div>
+    <!-- Bottom Div end -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Link Js File -->
+    <script src="script.js"></script>
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/eb1715b6f9.js" crossorigin="anonymous"></script>
+</body>
+</html>
